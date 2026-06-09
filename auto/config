@@ -1,0 +1,24 @@
+#!/bin/sh -e
+# live-build configuration script
+# see 'man lb config'
+
+lb config noauto \
+--clean \
+--ignore-system-defaults \
+--mode debian \
+--distribution trixie \
+--architectures amd64 \
+--archive-areas 'main contrib non-free non-free-firmware' \
+--updates true \
+--security true \
+--backports true \
+--source false \
+--binary-images iso-hybrid \
+--debian-installer live \
+--debian-installer-distribution trixie \
+--debconf-frontend noninteractive \
+--debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
+--linux-packages "linux-image linux-headers" \
+--bootappend-live "boot=live config splash components hostname=trixie-live sudo timezone=Europe/Berlin locales=en_US.UTF-8,de_DE.UTF-8 keyboard-layouts=de keyboard-model=pc105 " \
+
+"${@}"

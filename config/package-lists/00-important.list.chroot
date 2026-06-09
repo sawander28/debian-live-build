@@ -1,0 +1,11 @@
+vim
+curl
+tcpdump
+ethtool
+bridge-utils
+vlan
+netcat-openbsd
+dnsmasq-base
+bind9-dnsutils
+console-data
+console-setup
