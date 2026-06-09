@@ -23,6 +23,5 @@ lb config noauto \
 --initramfs live-boot
 --bootappend-live "boot=live config splash components " \
 --iso-publisher wandsas \
---iso-volume "debian-live"
-
+--iso-volume "debian-live" \
 "${@}"
