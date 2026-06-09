@@ -19,7 +19,7 @@ lb config noauto \
 --debian-installer-distribution trixie \
 --debconf-frontend noninteractive \
 --debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
---linux-packages "linux-iimage linux-headers" \
+--linux-packages "linux-image linux-headers" \
 --initramfs live-boot \
 --bootappend-live "boot=live config splash components " \
 --iso-publisher wandsas \
