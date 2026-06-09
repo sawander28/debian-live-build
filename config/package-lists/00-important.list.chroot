@@ -9,3 +9,4 @@ dnsmasq-base
 bind9-dnsutils
 console-data
 console-setup
+zstd

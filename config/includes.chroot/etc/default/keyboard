@@ -1,0 +1,10 @@
+# KEYBOARD CONFIGURATION FILE
+
+# Consult the keyboard(5) manual page.
+
+XKBMODEL="pc105"
+XKBLAYOUT="de(nodeadkeys)"
+XKBVARIANT=""
+XKBOPTIONS="caps:ctrl_modifier,terminate:ctrl_alt_bksp,keypad:pointerkeys"
+
+BACKSPACE="guess"
