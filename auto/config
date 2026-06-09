@@ -5,6 +5,7 @@
 lb config noauto \
 --clean \
 --ignore-system-defaults \
+--apt-recommends false \
 --mode debian \
 --distribution trixie \
 --architectures amd64 \
@@ -18,7 +19,10 @@ lb config noauto \
 --debian-installer-distribution trixie \
 --debconf-frontend noninteractive \
 --debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
---linux-packages "linux-image linux-headers" \
+--linux-packages "linux-iimage linux-headers" \
+--initramfs live-boot
 --bootappend-live "boot=live config splash components " \
+--iso-publisher wandsas \
+--iso-volume "debian-live"
 
 "${@}"
