@@ -20,7 +20,7 @@ lb config noauto \
 --debconf-frontend noninteractive \
 --debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
 --linux-packages "linux-iimage linux-headers" \
---initramfs live-boot
+--initramfs live-boot \
 --bootappend-live "boot=live config splash components " \
 --iso-publisher wandsas \
 --iso-volume "debian-live" \
