@@ -2,6 +2,7 @@ task-xfce-desktop
 
 plymouth
 plymouth-x11
+plymouth-themes
 
 gstreamer1.0-vaapi
 i965-va-driver
