@@ -1,5 +1,9 @@
 task-gnome-desktop
 
+task-english
+task-german
+task-german-desktop
+
 plymouth
 plymouth-x11
 plymouth-themes

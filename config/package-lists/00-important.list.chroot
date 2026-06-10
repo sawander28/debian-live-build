@@ -5,6 +5,7 @@ ethtool
 bridge-utils
 vlan
 netcat-openbsd
+nmap
 dnsmasq-base
 bind9-dnsutils
 console-data
@@ -14,3 +15,16 @@ user-setup
 sudo
 fonts-terminus
 xfonts-terminus
+tor
+torsocks
+tor-geoipdb
+torbrowser-launcher
+snowflake-proxy
+snowflake-client
+yubikey-manager
+sanoid
+alacritty
+user-setup
+sudo
+console-data
+console-setup

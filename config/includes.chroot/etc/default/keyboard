@@ -5,6 +5,6 @@
 XKBMODEL="pc105"
 XKBLAYOUT="de(nodeadkeys)"
 XKBVARIANT=""
-XKBOPTIONS="caps:ctrl_modifier,terminate:ctrl_alt_bksp,keypad:pointerkeys"
+XKBOPTIONS="caps:ctrl_modifier,terminate:ctrl_alt_bksp"
 
 BACKSPACE="guess"
