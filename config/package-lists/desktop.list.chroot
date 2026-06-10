@@ -1,8 +1,13 @@
-task-xfce-desktop
+task-gnome-desktop
 
 plymouth
 plymouth-x11
 plymouth-themes
 
-gstreamer1.0-vaapi
-i965-va-driver
+#gstreamer1.0-vaapi
+#i965-va-driver
+
+#dbus
+#dbus-x11
+#dbus-user-session
+

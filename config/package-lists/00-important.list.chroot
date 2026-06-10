@@ -10,3 +10,7 @@ bind9-dnsutils
 console-data
 console-setup
 zstd
+user-setup
+sudo
+fonts-terminus
+xfonts-terminus

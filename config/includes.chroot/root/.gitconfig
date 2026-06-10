@@ -1,0 +1,21 @@
+# $Debian: .gitconfig live-build 20260607 wandsas $
+
+[user]
+    email = root@trixie.vm.local
+    name = root
+[alias]
+    l = log --pretty='format:%h %G? %s%d' -n 20 --graph
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+    s = status -sb
+    ss = s -uno
+[color]
+    ui = false
+    diff = auto
+[commit]
+    gpgsign = false
+[tag]
+    gpgsign = false
+[init]
+	defaultBranch = main
