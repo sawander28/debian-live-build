@@ -24,7 +24,7 @@ lb config noauto \
 --debootstrap-options "--variant=minbase --include=apt-transport-https,ca-certificates,openssl" \
 --linux-packages "linux-image linux-headers" \
 --initramfs live-boot \
---bootappend-live "boot=live config splash components  user-setup sudo hostname=trixie-live locales=en_US.UTF-8,de_DE.UTF-8 keyboard-layouts=de " \
+--bootappend-live "boot=live config splash components user-setup sudo hostname=trixie-live locales=en_US.UTF-8,de_DE.UTF-8,C.UTF-8 keyboard-layouts=de " \
 --iso-publisher wandsas \
 --iso-volume "debian-live" \
 "${@}"
