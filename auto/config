@@ -6,6 +6,7 @@ lb config noauto \
 --clean \
 --ignore-system-defaults \
 --apt-recommends false \
+--apt-indices false \
 --mode debian \
 --distribution trixie \
 --architectures amd64 \
@@ -14,14 +15,16 @@ lb config noauto \
 --security true \
 --backports true \
 --source false \
+--firmware-chroot false \
+--firmware-binary false \
 --binary-images iso-hybrid \
 --debian-installer live \
 --debian-installer-distribution trixie \
 --debconf-frontend noninteractive \
---debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
+--debootstrap-options "--variant=minbase --include=apt-transport-https,ca-certificates,openssl" \
 --linux-packages "linux-image linux-headers" \
 --initramfs live-boot \
---bootappend-live "boot=live config splash components user-setup sudo " \
+--bootappend-live "boot=live config splash components hostname=trixie-live locales=en_US.UTF-8,de_DE.UTF-8 keyboard-layouts=de user-setup sudo " \
 --iso-publisher wandsas \
 --iso-volume "debian-live" \
 "${@}"
