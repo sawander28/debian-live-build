@@ -21,7 +21,7 @@ lb config noauto \
 --debootstrap-options "--include=apt-transport-https,ca-certificates,openssl" \
 --linux-packages "linux-image linux-headers" \
 --initramfs live-boot \
---bootappend-live "boot=live config splash components " \
+--bootappend-live "boot=live config splash components user-setup sudo " \
 --iso-publisher wandsas \
 --iso-volume "debian-live" \
 "${@}"
