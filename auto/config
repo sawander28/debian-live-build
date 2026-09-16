@@ -26,5 +26,5 @@ lb config noauto \
 --initramfs live-boot \
 --bootappend-live "boot=live config splash components user-setup sudo hostname=debian-live locales=en_US.UTF-8,de_DE.UTF-8,C.UTF-8 keyboard-layouts=de " \
 --iso-publisher wandsas \
---iso-volume "debian-live" \
+--iso-volume debian-live \
 "${@}"
